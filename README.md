@@ -4,6 +4,11 @@ Maintained by Malek Sibai.
 
 This repo is a clone of [varadbhogayata.github.io](https://github.com/varadbhogayata/varadbhogayata.github.io).
 
+## Activity 1
+
+![Activity 1 Screenshot](./images/Screenshot%202024-09-19%20at%2017.38.54.png)
+
+
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
