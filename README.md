@@ -6,7 +6,7 @@ This repo is a clone of [varadbhogayata.github.io](https://github.com/varadbhoga
 
 ## Activity 1
 
-![Activity 1 Screenshot](./images/Screenshot%202024-09-19%20at%2017.38.54.png)
+![Activity 1 Screenshot](./Screenshot%202024-09-19%20at%2017.38.54.png)
 
 
 # Personal Portfolio ⚡️ 
