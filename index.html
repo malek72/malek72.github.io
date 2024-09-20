@@ -460,30 +460,26 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
                 <img alt="quiz app" src="/assets/img/Screenshot 2024-09-20 at 11.31.55.png" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Precision Craft Pro<i
-                    class="mdi-navigation-more-vert right"></i></span>
+                <span class="card-title activator teal-text hoverline">Precision Craft Pro<i class="mdi-navigation-more-vert right"></i></span>
                 <p>
                   Precision Craft Pro
                 </p>
               </div>
               <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
+                <span class="card-title grey-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
                 <ul>
                   <li><b>Tools:</b> Python, C++, Arduino</li>
-                  <li>Exhibited technical adaptability by using Python for Raspberry Pi and Arduino (C++) for seamless control of
-                    mechanized blades</li>
-                  <li>Engineered blades with preset positions for consistent bamboo dimensions, showcasing proficiency in mechanical
-                    design and automation</li>
-
+                  <li>Exhibited technical adaptability by using Python for Raspberry Pi and Arduino (C++) for seamless control of mechanized blades</li>
+                  <li>Engineered blades with preset positions for consistent bamboo dimensions, showcasing proficiency in mechanical design and automation</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- ************* -->
+          <!-- Load More button -->
+          <div class="col s12 center-align">
+            <button id="load-more-btn" class="btn blue">Load More</button>
+          </div>
         </div>
       </div>
     </section>
@@ -502,18 +498,12 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
           description: "Controlled mechanized blades using Python for Raspberry Pi and C++ for Arduino.",
           image: "/assets/img/Screenshot 2024-09-20 at 11.31.55.png",
           link: "#"
-        },
-        {
-          title: "Neural Style Transfer",
-          description: "Applied deep learning techniques to transfer artistic styles between images.",
-          image: "/assets/img/neural-style-transfer.png",
-          link: "#"
         }
       ];
-    
+
       let currentProjectIndex = 0;
       const projectsPerPage = 1; // Number of projects to display at a time
-    
+
       // Function to format project HTML
       function format_project(project) {
         return `
@@ -538,13 +528,13 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
           </div>
         `;
       }
-    
+
       // Function to insert project into the DOM
       function project_add(projectHTML) {
         const recentProjectsSection = document.getElementById('recent-projects');
         recentProjectsSection.insertAdjacentHTML('beforeend', projectHTML);
       }
-    
+
       // Function to load more projects
       function loadMoreProjects() {
         let nextIndex = currentProjectIndex + projectsPerPage;
@@ -553,16 +543,16 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
           project_add(projectHTML);
         }
         currentProjectIndex = nextIndex;
-    
+
         // Hide the Load More button if all projects are loaded
         if (currentProjectIndex >= list_proj.length) {
           document.getElementById('load-more-btn').style.display = 'none';
         }
       }
-    
+
       // Initial load of the first project
       loadMoreProjects();
-    
+
       // Event listener for the Load More button
       document.getElementById('load-more-btn').addEventListener('click', loadMoreProjects);
     </script>
