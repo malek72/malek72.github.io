@@ -535,7 +535,7 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
         recentProjectsSection.insertAdjacentHTML('beforeend', projectHTML);
       }
 
-      function loadMoreProjects() {
+      function proj_run() {
         let proj_next = proj_iterate_current + pge_proj;
         for (let i = proj_iterate_current; i < proj_next && i < list_proj.length; i++) {
           const projectHTML = format_project(list_proj[i]);
@@ -548,9 +548,9 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
         }
       }
 
-      loadMoreProjects();
+      proj_run();
 
-      document.getElementById('load-more-btn').addEventListener('click', loadMoreProjects);
+      document.getElementById('load-more-btn').addEventListener('click', proj_run);
     </script>
 
 
@@ -606,7 +606,7 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
             <h4 class="brown-text light">Frameworks</h4>
             <div class="row text-center">
               <div class="col s4 m2">
-                <img alt="Flask" src="/assets/img/Screenshot 2024-09-19 at 19.00.38.png" class="responsive-img" />Flask
+                <img alt="Flask" src="/assets/img/1_LGWneEjCyzym9EAcXX_uTw.png" class="responsive-img" />Falcon
               </div>
               <div class="col s4 m2">
                 <img alt="Keras" src="/assets/img/keras-logo.png" class="responsive-img" />Keras
@@ -716,26 +716,27 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
       <div class="container">
         <p>
           <a aria-label="Email Malek" href="mailto:sibaimalek4@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:sibaimalek4@gmail.com"
+            data-tooltip="Email Malek" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Malek" href="mailto:sibaimalek4@gmail.com"
               class="hoverline">sibaimalek4@gmail.com</a></a>
         </p>
         <p>
           <a aria-label="View Malek on GitHub" href="http://github.com/malek72" target="_blank"
             data-position="top" data-tooltip="View Varad on GitHub"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Varad on Github" href="http://github.com/malek72" class="hoverline"
+              aria-label="Malek on Github" href="http://github.com/malek72" class="hoverline"
               target="_blank">github.com/malek72</a></a>
         </p>
         <p>
-          <a aria-label="View Varad on LinkedIn" href="https://www.linkedin.com/in/malek-sibai-2a9a4325b/" target="_blank"
+          <a aria-label="View Malek on LinkedIn" href="https://www.linkedin.com/in/malek-sibai-2a9a4325b/" target="_blank"
             data-position="top" data-tooltip="View Varad on LinkedIn"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Varad on LinkedIn" href="https://www.linkedin.com/in/malek-sibai-2a9a4325b/"
+              class="fa fa-linkedin"></i><a aria-label="Malek on LinkedIn" href="https://www.linkedin.com/in/malek-sibai-2a9a4325b/"
               class="hoverline" target="_blank">linkedin.com/in/malek-sibai-2a9a4325b</a></a>
         </p>
       </div>
     </section>
+    
     <section id="Google Maps Travelled" class="section scrollspy">
       <h3 class="page-title white-text blue">Places Travelled</h3>
       <div class="container">
