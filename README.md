@@ -22,7 +22,6 @@ Below are the screenshots for **Activity 2**:
 ![Screenshot 2024-09-20 at 00.12.19](./Screenshot%202024-09-20%20at%2000.12.19.png)
 ![Screenshot 2024-09-20 at 00.12.36](./Screenshot%202024-09-20%20at%2000.12.36.png)
 ![Screenshot 2024-09-20 at 00.12.50](./Screenshot%202024-09-20%20at%2000.12.50.png)
-![Screenshot 2024-09-20 at 00.13.30](./Screenshot%202024-09-20%20at%2000.13.30.png)
 
 
 
