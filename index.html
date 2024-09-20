@@ -424,6 +424,7 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text blue">Projects</h3>
       <div class="container">
+        <div id="recent-projects" class="row"></div>
         <div class="row">
           <div class="col s12 m6 l4">
             <div class="card medium">
@@ -486,6 +487,76 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
         </div>
       </div>
     </section>
+
+    <script>
+      const list_proj = [
+        {
+          title: "GAN Super-Resolution Project",
+          description: "Significantly improved image quality metrics, achieving a 35% increase in Peak Signal-to-Noise Ratio (PSNR) and a 50% reduction in adversarial losses, setting new benchmarks for image fidelity in super-resolution applications.",
+          image: "/assets/img/Screenshot 2024-09-19 at 18.49.41.png",
+        },
+        {
+          title: "Bamboo Innovare: Precision Craft Pro",
+          description: "Exhibited technical adaptability by using Python for Raspberry Pi and Arduino (C++) for seamless control of mechanized blades. Engineered blades with preset positions for consistent bamboo dimensions, showcasing proficiency in mechanical design and automation. ",
+          image: "/assets/img/Screenshot 2024-09-19 at 18.50.45.png",
+        }
+      ];
+    
+      let placement_project = 0;
+      const num_proj = 1; 
+      
+      function format_project(p) {
+    return `
+      <div class="col s12 m6 l4">
+        <div class="card medium">
+          <div class="card-image">
+            <img alt="${p.title}" src="${p.image}" style="height: 100%; width: 100%" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator blue-text hoverline">${p.title}
+              <i class="mdi-navigation-more-vert right"></i>
+            </span>
+            <p><a href="${p.link || '#'}" target="_blank">Project Link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text">
+              <small>${p.description}</small>
+              <i class="mdi-navigation-close right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+    function project_add(code) {
+      const recent_addition = document.getElementById('recent-projects');
+      recent_addition.insertAdjacentHTML('beforeend', code);
+    }
+
+    function load_addition() {
+      if (placement_project >= list_proj.length) {
+        document.getElementById('load-more-btn').style.display = 'none';
+      }
+    }
+
+    function iterate_proj() {
+      let last = placement_project + num_proj;
+
+      for (let i = placement_project; i < last && i < list_proj.length; i++) {
+        const code_proj = format_project(list_proj[i]);
+        project_add(code_proj);
+      }
+
+      placement_project = last;
+      load_addition();
+    }
+
+    document.getElementById('load-more-btn').addEventListener('click', iterate_proj);
+
+    iterate_proj();
+    </script>
+
 
 
     <!-- Fifth Section: Skills -->
