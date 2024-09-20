@@ -1,15 +1,29 @@
-<<<<<<< HEAD
-# malek72.github.io
-=======
-# Personal Website
+# Malek Sibai's Clone Repository
 
-Maintained by Malek Sibai.
+Hello! My name is **Malek Sibai**.
 
-This repo is a clone of [varadbhogayata.github.io](https://github.com/varadbhogayata/varadbhogayata.github.io).
+This repository is a clone of [varadbhogayata.github.io](https://github.com/varadbhogayata/varadbhogayata.github.io).
 
 ## Activity 1
 
 ![Activity 1 Screenshot](./Screenshot%202024-09-19%20at%2017.38.54.png)
+
+## Activity 2
+
+Below are the screenshots for **Activity 2**:
+
+![Screenshot 2024-09-20 at 00.13.30](./Screenshot%202024-09-20%20at%2000.13.30.png)
+![Screenshot 2024-09-20 at 00.03.20](./Screenshot%202024-09-20%20at%2000.03.20.png)
+![Screenshot 2024-09-20 at 00.03.36](./Screenshot%202024-09-20%20at%2000.03.36.png)
+![Screenshot 2024-09-20 at 00.03.54](./Screenshot%202024-09-20%20at%2000.03.54.png)
+![Screenshot 2024-09-20 at 00.04.08](./Screenshot%202024-09-20%20at%2000.04.08.png)
+![Screenshot 2024-09-20 at 00.06.17](./Screenshot%202024-09-20%20at%2000.06.17.png)
+![Screenshot 2024-09-20 at 00.07.28](./Screenshot%202024-09-20%20at%2000.07.28.png)
+![Screenshot 2024-09-20 at 00.12.19](./Screenshot%202024-09-20%20at%2000.12.19.png)
+![Screenshot 2024-09-20 at 00.12.36](./Screenshot%202024-09-20%20at%2000.12.36.png)
+![Screenshot 2024-09-20 at 00.12.50](./Screenshot%202024-09-20%20at%2000.12.50.png)
+![Screenshot 2024-09-20 at 00.13.30](./Screenshot%202024-09-20%20at%2000.13.30.png)
+
 
 
 # Personal Portfolio ⚡️ 
@@ -84,4 +98,3 @@ To view a live example, **[click here](https://varadbhogayata.github.io/)**
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
->>>>>>> master
