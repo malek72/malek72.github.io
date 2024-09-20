@@ -485,29 +485,26 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
     </section>
 
     <script>
-      // Array of recent projects
       const list_proj = [
       {
         title: "GAN Super-Resolution Project",
         description: "Improved image quality metrics by 35% in PSNR and reduced adversarial losses by 50%.",
         image: "/assets/img/Screenshot 2024-09-19 at 18.49.41.png",
-        date: "2024-01-01"  // Date format: YYYY-MM-DD
+        date: "2024-01-01"  
       },
       {
         title: "Bamboo Innovare: Precision Craft Pro",
         description: "Controlled mechanized blades using Python for Raspberry Pi and C++ for Arduino.",
         image: "/assets/img/Screenshot 2024-09-20 at 11.31.55.png",
-        date: "2023-01-01"  // Date format: YYYY-MM-DD
+        date: "2023-01-01"  
       }
       ];
 
-      let currentProjectIndex = 0;
-      const projectsPerPage = 1; // Number of projects to display at a time
+      let proj_iterate_current = 0;
+      const pge_proj = 1; 
 
-      // Sort projects by date (newest first)
       list_proj.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-      // Function to format project HTML
       function format_project(project) {
         return `
           <div class="col s12 m6 l4">
@@ -533,31 +530,26 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
         `;
       }
 
-      // Function to insert project into the DOM
       function project_add(projectHTML) {
         const recentProjectsSection = document.getElementById('recent-projects');
         recentProjectsSection.insertAdjacentHTML('beforeend', projectHTML);
       }
 
-      // Function to load more projects
       function loadMoreProjects() {
-        let nextIndex = currentProjectIndex + projectsPerPage;
-        for (let i = currentProjectIndex; i < nextIndex && i < list_proj.length; i++) {
+        let proj_next = proj_iterate_current + pge_proj;
+        for (let i = proj_iterate_current; i < proj_next && i < list_proj.length; i++) {
           const projectHTML = format_project(list_proj[i]);
           project_add(projectHTML);
         }
-        currentProjectIndex = nextIndex;
+        proj_iterate_current = proj_next;
 
-        // Hide the Load More button if all projects are loaded
-        if (currentProjectIndex >= list_proj.length) {
+        if (proj_iterate_current >= list_proj.length) {
           document.getElementById('load-more-btn').style.display = 'none';
         }
       }
 
-      // Initial load of the first project
       loadMoreProjects();
 
-      // Event listener for the Load More button
       document.getElementById('load-more-btn').addEventListener('click', loadMoreProjects);
     </script>
 
