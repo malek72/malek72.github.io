@@ -22,7 +22,19 @@ Below are the screenshots for **Activity 2**:
 ![Screenshot 2024-09-20 at 00.12.19](./Screenshot%202024-09-20%20at%2000.12.19.png)
 ![Screenshot 2024-09-20 at 00.12.36](./Screenshot%202024-09-20%20at%2000.12.36.png)
 ![Screenshot 2024-09-20 at 00.12.50](./Screenshot%202024-09-20%20at%2000.12.50.png)
+![Screenshot 2024-09-20 at 00.13.30](./Screenshot%202024-09-20%20at%2000.13.30.png)
 
+## Activity 3
+
+![Activity 3 Screenshot](./Screenshot%202024-09-20%20at%2000.49.06.png)
+
+## Activity 4
+
+![Activity 4 Screenshot](./Screenshot%202024-09-20%20at%2013.19.46.png)
+
+## Activity 5
+
+![Activity 5 Screenshot](./Screenshot%202024-09-20%20at%2013.20.24.png)
 
 
 # Personal Portfolio ⚡️ 
