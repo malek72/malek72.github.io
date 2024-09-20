@@ -487,22 +487,25 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
     <script>
       // Array of recent projects
       const list_proj = [
-        {
-          title: "GAN Super-Resolution Project",
-          description: "Improved image quality metrics by 35% in PSNR and reduced adversarial losses by 50%.",
-          image: "/assets/img/Screenshot 2024-09-19 at 18.49.41.png",
-          link: "#"
-        },
-        {
-          title: "Bamboo Innovare: Precision Craft Pro",
-          description: "Controlled mechanized blades using Python for Raspberry Pi and C++ for Arduino.",
-          image: "/assets/img/Screenshot 2024-09-20 at 11.31.55.png",
-          link: "#"
-        }
+      {
+        title: "GAN Super-Resolution Project",
+        description: "Improved image quality metrics by 35% in PSNR and reduced adversarial losses by 50%.",
+        image: "/assets/img/Screenshot 2024-09-19 at 18.49.41.png",
+        date: "2024-01-01"  // Date format: YYYY-MM-DD
+      },
+      {
+        title: "Bamboo Innovare: Precision Craft Pro",
+        description: "Controlled mechanized blades using Python for Raspberry Pi and C++ for Arduino.",
+        image: "/assets/img/Screenshot 2024-09-20 at 11.31.55.png",
+        date: "2023-01-01"  // Date format: YYYY-MM-DD
+      }
       ];
 
       let currentProjectIndex = 0;
       const projectsPerPage = 1; // Number of projects to display at a time
+
+      // Sort projects by date (newest first)
+      list_proj.sort((a, b) => new Date(b.date) - new Date(a.date));
 
       // Function to format project HTML
       function format_project(project) {
@@ -517,6 +520,7 @@ decision-making speed, thereby enhancing system efficiency and market competitiv
                   <i class="mdi-navigation-more-vert right"></i>
                 </span>
                 <p><a href="${project.link}" target="_blank">Project Link</a></p>
+                <p><small>Date: ${new Date(project.date).toLocaleDateString()}</small></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text">
